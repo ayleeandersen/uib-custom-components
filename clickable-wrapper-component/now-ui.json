@@ -12,7 +12,16 @@
         "description": "A wrapper that emits an onClick event",
         "category": "primitives"
       },
-      "properties": [],
+      "properties": [
+        {
+          "name": "disabled",
+          "label": "Disabled",
+          "required": false,
+          "readOnly": false,
+          "fieldType": "boolean",
+          "defaultValue": false
+        }
+      ],
       "actions": [
         {
           "name": "CLICKABLE_WRAPPER#CLICKED",
