@@ -1,12 +1,12 @@
 {
-	"name": "clickable-wrapper-components",
+	"name": "clickable-wrapper-component",
 	"version": "0.0.1",
 	"private": false,
 	"description": "",
 	"keywords": [
 		"ServiceNow",
 		"Now Experience UI Component",
-		"clickable-wrapper-components"
+		"clickable-wrapper-component"
 	],
 	"readme": "./README.md",
 	"engines": {

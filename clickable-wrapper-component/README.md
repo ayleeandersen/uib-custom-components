@@ -1,4 +1,4 @@
-clickable-wrapper-components
+clickable-wrapper-component
 ===============================================
 
 

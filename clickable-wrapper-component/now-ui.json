@@ -1,4 +1,32 @@
 {
-  "components": {},
+  "components": {
+    "x-827743-clickable-wrapper": {
+      "innerComponents": [],
+      "uiBuilder": {
+        "associatedTypes": [
+          "global.core",
+          "global.landing-page"
+        ],
+        "label": "Clickable Wrapper (Yansa Labs)",
+        "icon": "document-outline",
+        "description": "A wrapper that emits an onClick event",
+        "category": "primitives"
+      },
+      "properties": [],
+      "actions": [
+        {
+          "name": "CLICKABLE_WRAPPER#CLICKED",
+          "label": "Clicked",
+          "description": "Dispatched when the contents of the card are clicked",
+          "payload": [
+            {}
+          ]
+        }
+      ],
+      "slots": [
+        "content"
+      ]
+    }
+  },
   "scopeName": "x_827743_clickab_0"
 }
