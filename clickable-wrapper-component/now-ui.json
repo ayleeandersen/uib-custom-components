@@ -19,7 +19,17 @@
           "required": false,
           "readOnly": false,
           "fieldType": "boolean",
-          "defaultValue": false
+          "defaultValue": false,
+          "description": "Turns off the ability to click the contents of the wrapper"
+        },
+        {
+          "name": "ariaLabel",
+          "label": "Aria Label",
+          "required": false,
+          "readOnly": false,
+          "fieldType": "string",
+          "defaultValue": "Clickable Wrapper",
+          "description": "Description of the clickable contents for screenreaders"
         }
       ],
       "actions": [

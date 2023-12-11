@@ -7,24 +7,29 @@ createCustomElement('x-827743-clickable-wrapper', {
     view: (state, { dispatch }) => {
         const { properties } = state;
 
-        if (properties.disabled) {
-            return (
-                <div className="clickableWrapper disabled">
-                    <slot name="content" />
-                </div>
-            )
-        }
-
         return (
-            <div className="clickableWrapper" onclick={() => dispatch("CLICKABLE_WRAPPER#CLICKED")}>
-                <slot name="content" />
+            <div className="clickableWrapper">
+                <button
+                    className="clickableButton"
+                    type="button"
+                    aria-label={properties.ariaLabel}
+                    disabled={properties.disabled}
+                    onclick={() => {
+                        if (!properties.disabled) dispatch("CLICKABLE_WRAPPER#CLICKED");
+                    }}
+                >
+                    <slot name="content" />
+                </button>
             </div>
         );
     },
     properties: {
         disabled: {
             default: false
-        }
+        },
+        ariaLabel: {
+            default: ""
+        },
     },
     styles,
     renderer: { type: snabbdom }

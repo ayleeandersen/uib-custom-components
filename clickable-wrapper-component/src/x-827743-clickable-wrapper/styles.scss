@@ -1,9 +1,14 @@
 @import '@servicenow/sass-kit/host';
 
 .clickableWrapper {
-  cursor: pointer;
 
-  &.disabled {
-    cursor: auto;
+  .clickableButton {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    
+    &:disabled {
+      cursor: auto;
+    }
   }
 }
